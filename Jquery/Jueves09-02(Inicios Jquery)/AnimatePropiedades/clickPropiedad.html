@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>			</title>
+    <script src="jquerycolors.js"></script>
+    <script>
+	//Afegir el codi necessari perquè quan es faci un click al paràgraf el h1 canviï de color.
+
+
+        $(document).ready(function() {
+            $("p").click(function() {
+
+                let miPe = $("h1");
+
+                miPe.animate({color : 'purple'}, "fast");
+
+
+
+                });
+                });
+
+
+
+	</script>
+</head>
+<body>
+<h1>Hola!!!</h1>
+<p>Soy un párrafo quiero un click!! </p>
+
+
+</body>
+</html>

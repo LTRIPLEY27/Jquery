@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>callBack</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+
+            $("button").click(function() {
+                $("p").hide(1000, function() { alert("el parrafo se escondio...")});
+
+            /* sin callback
+
+                $("p").hide(1000);
+
+                alert("el parrafo se escondio..."); */
+
+               });
+
+               });
+
+    </script>
+</head>
+<body>
+
+    <button>click</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate delectus eum expedita illum iure labore libero minus non quaerat quos ratione repellendus, repudiandae rerum saepe similique sunt tenetur veritatis.</p>
+</body>
+</html>

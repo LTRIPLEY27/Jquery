@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script>
+//Mover el elemento <div> a la derecha 250px, y luego aumentar el tamaño de letra del texto
+
+    $(document).ready(function() {
+      $("div").click(function() {
+
+        let varDiv = $("div"); // ADJUNTAMOS EL VALOR DE LA VARIABLE "DIV" A UNA VARIABLE PARA OPTIMIZAR
+
+        varDiv.animate({left: '250px'} , "slow");
+        varDiv.animate({fontSize : '25px'}, "slow"); // PROPIEDADES DEL JQUERY
+
+        });
+
+        });
+
+</script>
+</head>
+<body>
+
+<!-- USO CON EL MARGIN-LEFT-->
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;">Hello</div>
+
+</body>
+</html>

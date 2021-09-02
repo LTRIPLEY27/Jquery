@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        /*   METODOS PARA MANIPULAR EL DOM
+
+            jQuery métodos para manipular el DOM
+            •text() - Establece o devuelve el contenido del texto de los elementos seleccionados.
+            •html() - Establece o devuelve el contenido de los elementos seleccionados.(including HTML markup)
+            •val() - Establece o devuelve el valor de los campos del form*/
+
+        $(document).ready(function(){
+
+        $("#btn1").click(function() {
+            alert("Text:" + $("#test2").text());
+        });
+
+        $("#btn2").click(function() {
+            alert("HTML:" + $("#test2").html());
+        });
+
+        $("#btn3").click(function() {
+            alert("Val:" + $("#test2").val());
+        });
+
+        });
+    </script>
+
+</head>
+<body>
+
+<p>Este es un <b>bold</b> texto en un parrafo</p>
+Name: <input type="text" id="test2" value="doors">
+<button id="btn1">metodo text()</button>
+<button id="btn2">metodo html()</button>
+<button id="btn3">metodo val()</button>
+</body>
+</html>

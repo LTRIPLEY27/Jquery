@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        /*   METODOS PARA MANIPULAR EL DOM
+
+            jQuery métodos para manipular el DOM
+            •text() - Establece o devuelve el contenido del texto de los elementos seleccionados.
+            •html() - Establece o devuelve el contenido de los elementos seleccionados.(including HTML markup)
+            •val() - Establece o devuelve el valor de los campos del form*/
+
+        $(document).ready(function(){
+
+        $("#btn1").click(function() {
+            $("#test1").text("Hello");
+        });
+
+        $("#btn2").click(function() {
+           $("#text2").html("<b>Hello</>b>");
+        });
+
+        $("#btn3").click(function() {
+            $("#test3").val("HERE WE GO");
+        });
+
+        });
+    </script>
+</head>
+<body>
+    <p id="test1"> Paragrafo prueba</p>
+
+    <p id="test2">P2</p>
+
+    <p>Input field: <input type="text" id="test3" value="Doraemon"></p>
+
+    <button id="btn1"> set text</button>
+    <button id="btn2">set html</button>
+    <button id="btn3">set value</button>
+
+</body>
+</html>

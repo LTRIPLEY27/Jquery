@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script>
+/* Animacions nessàries per  fer:
+canvi alçada a 500 px i opacitat de 0,4
+canvi d'amplada a 300px i opacitaat 0.8
+Moviment cap a la dreta de 100px
+un canvi de tamany de la lletra a més gran
+i tornem cap enrera:
+alçada de 100px amb opacitat de 0.4
+amplada de 100px amb opacitat de 0.8
+moviment cap a l'esquerre
+i canvi de tamany de la lletra a més petita
+
+Tot amb una velocitat slow
+*/
+
+    $(document).ready(function() {
+      $("button").click(function() { // EL EVENTO LO DISPARA EL "BUTTON", NO EL "DIV"
+
+        let varDiv = $("div"); // ADJUNTAMOS EL VALOR DE LA VARIABLE "DIV" A UNA VARIABLE PARA OPTIMIZAR
+        let miDiv = $("div#dos"); // SEGUNDA VARIABLE CON EL VALOR DEL DIV, ID "TWO"
+
+        varDiv.animate({height: '500px'} , "slow");
+        varDiv.animate({width: '300px'}, "slow");
+        varDiv.animate({opacity : '0.4PX'} , "slow");
+        miDiv.animate({width : '300px'} , "slow");
+        miDiv.animate({height: '500px'}, "slow");
+        miDiv.animate({opacity : '0.8px'} , "slow");
+        varDiv.animate({margin : '100px'}, "slow");
+        miDiv.animate({margin : '100px'} , "slow");
+        miDiv.animate({fontSize: '80px'});
+
+
+        varDiv.animate({margin : '-100px'}, "slow");
+        miDiv.animate({margin : '-100px'} , "slow");
+        varDiv.animate({height: '100px'} , "slow");
+        varDiv.animate({width: '100px'}, "slow");
+        varDiv.animate({opacity : '0.8px'} , "slow");
+        miDiv.animate({width : '100px'} , "slow");
+        miDiv.animate({height: '100px'}, "slow");
+        miDiv.animate({opacity : '0.8px'} , "slow");
+        miDiv.animate({fontSize: '30px'});
+
+
+        //varDiv.animate({fontSize : '70px'}, "fast"); // PROPIEDADES DEL JQUERY CADA UNA REFIERE A UN EVENTO DISTINTO A EJECUTAR
+
+        });
+
+        });
+
+
+</script>
+</head>
+<body>
+<button>Start Animation</button>
+
+<div style="border: 2px solid orange; border-radius: 50%; background:red;height:100px;width:100px;position:relative;"> </div>
+
+<div id="dos" style="background:#98bf21;height:100px;width:200px;position:relative;">HELLO</div>
+</body>
+</html>
